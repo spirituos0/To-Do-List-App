@@ -33,6 +33,8 @@
             btnRemoveTask = new Button();
             listTasks = new ListBox();
             btnClearTasks = new Button();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // txtTask
@@ -81,11 +83,31 @@
             btnClearTasks.UseVisualStyleBackColor = true;
             btnClearTasks.Click += btnClearTasks_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(103, 72);
+            label1.Name = "label1";
+            label1.Size = new Size(89, 15);
+            label1.TabIndex = 5;
+            label1.Text = "Write your task:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(105, 123);
+            label2.Name = "label2";
+            label2.Size = new Size(37, 15);
+            label2.TabIndex = 6;
+            label2.Text = "Tasks:";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(446, 366);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(btnClearTasks);
             Controls.Add(listTasks);
             Controls.Add(btnRemoveTask);
@@ -104,5 +126,7 @@
         private Button btnRemoveTask;
         private ListBox listTasks;
         private Button btnClearTasks;
+        private Label label1;
+        private Label label2;
     }
 }
